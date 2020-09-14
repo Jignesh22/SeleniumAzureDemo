@@ -3,6 +3,7 @@ package testPackageLogin;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -15,6 +16,17 @@ public class LoginTest {
 	public void test1_AdminLogin() throws InterruptedException {
 		// Setup chromer driver
 		WebDriverManager.chromedriver().version("2.46").setup();
+		
+		
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("disable-infobars"); // disabling infobars
+		options.addArguments("--disable-extensions"); // disabling extensions
+		options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+		options.addArguments("--no-sandbox"); // Bypass OS security model
+		
+		
+		
+		
 		// Launch google chromer browser
 		driver = new ChromeDriver();
 		// Enter URL and open the site.
