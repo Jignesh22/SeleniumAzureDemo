@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -14,21 +15,23 @@ public class LoginTest {
 
 	@Test
 	public void test1_AdminLogin() throws InterruptedException {
+		
+/*		
 		// Setup chromer driver
 		WebDriverManager.chromedriver().version("2.46").setup();
-		
-		
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("disable-infobars"); // disabling infobars
 		options.addArguments("--disable-extensions"); // disabling extensions
 		options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 		options.addArguments("--no-sandbox"); // Bypass OS security model
-		
-		
-		
-		
 		// Launch google chromer browser
 		driver = new ChromeDriver(options);
+*/		
+		
+		WebDriverManager.firefoxdriver().setup();
+		driver = new FirefoxDriver();
+		
+		
 		// Enter URL and open the site.
 		driver.get("http://www.opsauto.radixdev68.com/admin/");
 		// Maximize window of the browser window
