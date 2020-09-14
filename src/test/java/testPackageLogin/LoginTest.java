@@ -28,7 +28,7 @@ public class LoginTest {
 		
 		
 		// Launch google chromer browser
-		driver = new ChromeDriver();
+		driver = new ChromeDriver(options);
 		// Enter URL and open the site.
 		driver.get("http://www.opsauto.radixdev68.com/admin/");
 		// Maximize window of the browser window
