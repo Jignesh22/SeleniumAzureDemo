@@ -27,10 +27,13 @@ public class LoginTest {
 		// Launch google chromer browser
 		driver = new ChromeDriver(options);
 */		
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
 		
+/*		
 		WebDriverManager.firefoxdriver().setup();
 		driver = new FirefoxDriver();
-		
+*/		
 		
 		// Enter URL and open the site.
 		driver.get("http://www.opsauto.radixdev68.com/admin/");
