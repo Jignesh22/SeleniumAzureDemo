@@ -14,7 +14,7 @@ public class LoginTest {
 	@Test
 	public void test1_AdminLogin() throws InterruptedException {
 		// Setup chromer driver
-		WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().version("2.46").setup();
 		// Launch google chromer browser
 		driver = new ChromeDriver();
 		// Enter URL and open the site.
