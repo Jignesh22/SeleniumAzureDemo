@@ -5,9 +5,9 @@
 		<classes>
 			<class name="testPackageLogin.LoginTest">
 				<methods>
-					<include name="test1" />
-					<include name="test2" />
-					<include name="test3" />
+					<include name="test1_AdminLogin" />
+					<include name="test2_CreateCustomer" />
+					<include name="test3_AdminLogout" />
 				</methods>
 			</class>
 		</classes>
