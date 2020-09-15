@@ -39,6 +39,7 @@ public class LoginTest {
 		
 		driver = new ChromeDriver(options);
 		
+		driver.manage().deleteAllCookies();
 /*		
 		WebDriverManager.firefoxdriver().setup();
 		driver = new FirefoxDriver();
