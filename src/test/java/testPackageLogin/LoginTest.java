@@ -27,15 +27,21 @@ public class LoginTest {
 		// Launch google chromer browser
 		driver = new ChromeDriver(options);
 */		
-		WebDriverManager.chromedriver().setup();
+
+//		System.setProperty("webdriver.chrome.driver", ".//chromedriver");
 		
+		WebDriverManager.chromedriver().setup();
+		System.out.println("----------PASS: CHROME DRIVER SETUP BY WEBDRIVER_MANAGER----------");
+	
+
 		driver = new ChromeDriver();
+		System.out.println("----------PASS: LAUNCHED CHROME ----------");
 		
 		driver.manage().deleteAllCookies();
-		
+		System.out.println("----------PASS: DELETED ALL COOKIES----------");
 		
 		Thread.sleep(15000);
-		
+		System.out.println("----------PASS: 15 SECONDS WAIT----------");
 		
 		
 /*		
@@ -45,6 +51,9 @@ public class LoginTest {
 		
 		// Enter URL and open the site.
 		driver.get("http://www.opsauto.radixdev68.com/admin/");
+		System.out.println("----------PASS: OPSQA URL OPENED----------");
+		
+		
 		// Maximize window of the browser window
 		driver.manage().window().maximize();
 		// Adding sleep wait

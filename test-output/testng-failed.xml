@@ -6,6 +6,7 @@
       <class name="testPackageLogin.LoginTest">
         <methods>
           <include name="test3_AdminLogout"/>
+          <include name="test1_AdminLogin"/>
           <include name="test2_CreateCustomer"/>
         </methods>
       </class> <!-- testPackageLogin.LoginTest -->
