@@ -29,17 +29,15 @@ public class LoginTest {
 */		
 		WebDriverManager.chromedriver().setup();
 		
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("disable-infobars"); // disabling infobars
-		options.addArguments("--disable-extensions"); // disabling extensions
-		options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-		options.addArguments("--no-sandbox"); // Bypass OS security model
-		
-		
-		
-		driver = new ChromeDriver(options);
+		driver = new ChromeDriver();
 		
 		driver.manage().deleteAllCookies();
+		
+		
+		Thread.sleep(15000);
+		
+		
+		
 /*		
 		WebDriverManager.firefoxdriver().setup();
 		driver = new FirefoxDriver();
