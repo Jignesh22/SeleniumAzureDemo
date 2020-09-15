@@ -52,7 +52,7 @@ public class LoginTest {
 */		
 		
 		// Enter URL and open the site.
-		driver.get("http://www.opsauto.radixdev68.com/admin/");
+		driver.get("http://demoqa.forprintshop.com/admin/");
 		System.out.println("----------PASS: OPSQA URL OPENED----------");
 		
 		
@@ -76,7 +76,7 @@ public class LoginTest {
 	public void test2_CreateCustomer() throws InterruptedException {
 
 		// Navigate to add customer form
-		driver.navigate().to("http://www.opsauto.radixdev68.com/admin/user_action.php");
+		driver.navigate().to("http://demoqa.forprintshop.com/admin/user_action.php");
 		// Adding sleep wait
 		Thread.sleep(5000);
 		// Fill customer details
