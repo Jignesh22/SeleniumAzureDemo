@@ -30,13 +30,13 @@ public class LoginTest {
 
 //		System.setProperty("webdriver.chrome.driver", ".//chromedriver");
 		
-	//	WebDriverManager.chromedriver().setup();
-		WebDriverManager.firefoxdriver().setup();
+		WebDriverManager.chromedriver().setup();
+	//	WebDriverManager.firefoxdriver().setup();
 		System.out.println("----------PASS: CHROME DRIVER SETUP BY WEBDRIVER_MANAGER----------");
 	
 
-	//	driver = new ChromeDriver();
-		driver = new FirefoxDriver();
+		driver = new ChromeDriver();
+	//	driver = new FirefoxDriver();
 		System.out.println("----------PASS: LAUNCHED CHROME ----------");
 		
 		driver.manage().deleteAllCookies();
